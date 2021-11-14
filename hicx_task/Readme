@@ -1,0 +1,47 @@
+
+This is a springboot project.
+
+To run this application please run the below command byt adding the path of the folder
+as you can see below i've provided D:\hicx\ and be sure to add back slash as shown in example:
+
+-> mvn spring-boot:run -Dspring-boot.run.arguments=--path=D:\hicx\
+
+
+There are three components:
+
+-> Extensions that needs to be supported
+-> File parser which parses  all of the files in the folder and move the files to processed folder.
+-> Service which basically collects all fo the statistics.
+
+Working of the application:
+
+-> application will get all the files at the path provided parse them, prints statistics and then move them to the processed folder.
+
+Result will look something like this:
+
+:::::::::::::::::: FILENAME : admin_env_stg.txt  :::::::::::::::::::
+:: Total Number of Words are : 76
+:: Most Used Word in the File : arthere
+:: Total Number of Dots are : 43
+:: Total Number of Special Characters are : 3037
+:: Total Number of White Spaces are : 3753
+:::::::::::::::::: FILENAME : cards_env.txt  :::::::::::::::::::
+:: Total Number of Words are : 88
+:: Most Used Word in the File : abcc
+:: Total Number of Dots are : 43
+:: Total Number of Special Characters are : 3351
+:: Total Number of White Spaces are : 4190
+:::::::::::::::::: FILENAME : Card_Stg.txt  :::::::::::::::::::
+:: Total Number of Words are : 88
+:: Most Used Word in the File : DATASOURCE_URL=jd
+:: Total Number of Dots are : 44
+:: Total Number of Special Characters are : 3357
+:: Total Number of White Spaces are : 4191
+:::::::::::::::::: FILENAME : messages_env.txt  :::::::::::::::::::
+:: Total Number of Words are : 71
+:: Most Used Word in the File : DATASOURCE_URL=jd
+:: Total Number of Dots are : 39
+:: Total Number of Special Characters are : 2921
+:: Total Number of White Spaces are : 3609
+
+
